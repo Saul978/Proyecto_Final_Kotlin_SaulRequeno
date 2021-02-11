@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                     android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_mod"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:paddingEnd="16dp"
+                android:paddingStart="6dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:navigationIcon="@drawable/ic_keyboard_backspace_black_24dp"
+                />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ImageButton
+                    android:layout_width="match_parent"
+                    android:text="@string/a_adir_imagen"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Mod_Imagen"
+                    android:maxHeight="250dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Mod_Nombre"
+                    android:layout_width="395dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EtMod_Nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nombre_de_producto"
+                        android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Mod_Precio"
+                    android:layout_width="395dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EtMod_Precio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/precio_de_producto"
+                        android:inputType="numberDecimal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Mod_Categoria"
+                    android:layout_width="395dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EtMod_Categoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/categoria_del_producto"
+                        android:inputType="text"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="15"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Mod_Descripcion"
+                    android:layout_width="395dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EtMod_Descripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/descripcion_del_producto"
+                        android:inputType="text"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="15"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Mod_Marca"
+                    android:layout_width="395dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EtMod_Marca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/marca_del_productor"
+                        android:inputType="text"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="15"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

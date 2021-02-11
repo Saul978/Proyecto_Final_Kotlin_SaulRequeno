@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".Activities.Product_Details"
+                android:background="#e6e6e6"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="162dp"
+                        android:layout_height="23dp"
+                        android:ems="10"
+                        android:id="@+id/Marca_Descripcion" android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="196dp"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="196dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintVertical_bias="0.0" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                        app:layout_constraintHorizontal_bias="0.0"/>
+                <TextView
+                        android:layout_width="396dp"
+                        android:layout_height="37dp"
+                        android:ems="10"
+                        android:id="@+id/Nombre_Descripcion" android:layout_marginEnd="196dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginRight="196dp"
+                        android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                        app:layout_constraintHorizontal_bias="0.005" android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/Marca_Descripcion"
+                        app:layout_constraintVertical_bias="0.0" android:textStyle="bold" android:textSize="25sp"/>
+                <ImageView
+                        android:layout_width="400dp"
+                        android:layout_height="387dp" tools:srcCompat="@tools:sample/avatars"
+                        android:id="@+id/Imagen_Descripcion"
+                        app:layout_constraintTop_toBottomOf="@+id/Nombre_Descripcion" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+                <Button
+                        android:layout_width="87dp"
+                        android:layout_height="42dp"
+                        android:id="@+id/Precio_Descripcion"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/borde_precio"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textColor="#8C3B61"
+                        app:layout_constraintTop_toBottomOf="@+id/Imagen_Descripcion"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintVertical_bias="0.0"/>
+                <TextView
+                        android:textAlignment="center"
+                        android:background="#FFFFFF"
+                        android:layout_width="413dp"
+                        android:minHeight="222dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:layout_marginTop="12dp" android:id="@+id/Descripcion_Descripcion"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Precio_Descripcion"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                        app:layout_constraintVertical_bias="1.0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>

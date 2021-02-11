@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="25dp"
+             android:layout_marginBottom="25dp"
+             tools:context=".Fragments.Fragment_shopping">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Carrito_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="621dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/borde_precio"
+            android:layout_gravity="bottom|center"
+            android:padding="10dp"
+            android:gravity="left|center"
+            android:textSize="20sp"
+            android:text="@string/pagar"
+            android:layout_width="350dp"
+            android:textColor="#8C3B61"
+            android:drawableRight="@drawable/ic_flecha"
+            android:layout_height="55dp" android:id="@+id/Pagar_Button"/>
+</FrameLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:paddingEnd="16dp"
+                android:paddingStart="6dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:navigationIcon="@drawable/ic_keyboard_backspace_black_24dp"
+        />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"  android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                    android:text="@string/el_total_de_su_compra_es"
+                    android:layout_width="411dp"
+                    android:layout_height="53dp"
+                    android:id="@+id/Total" android:textStyle="bold" android:textSize="19dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Pagar_Direccion"
+                    android:layout_width="395dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Et_Pagar_Direccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/direccion_de_envio"
+                        android:inputType="textPostalAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.braintreepayments.cardform.view.CardForm
+                    android:id="@+id/credito"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+            >
+
+            </com.braintreepayments.cardform.view.CardForm>
+
+            <Button
+                    android:text="@string/realizar_pedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:id="@+id/Boton_Confirmar_Pago"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

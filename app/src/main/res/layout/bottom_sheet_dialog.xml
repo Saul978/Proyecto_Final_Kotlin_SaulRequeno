@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+            android:text="@string/escoge_la_cantidad_del_producto_seleccionado"
+            android:layout_width="411dp"
+            android:layout_height="53dp"
+            android:id="@+id/Introduce_cantidad" android:textStyle="bold" android:textSize="19dp"/>
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:id="@+id/Spinner_cantidad"
+            android:entries="@array/cantidad"
+            android:prompt="@array/cantidad"/>
+    <Button
+            android:text="@string/aceptar"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:id="@+id/Boton_Aceptar"/>
+
+</LinearLayout>

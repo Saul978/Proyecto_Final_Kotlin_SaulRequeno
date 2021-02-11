@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragments.Fragment_Ajustes">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+android:orientation="vertical"
+android:layout_marginTop="75dp"
+android:layout_marginLeft="25dp">
+    <TextView
+            android:text="@string/cerrar_sesion"
+            android:layout_width="match_parent"
+            android:drawableRight="@drawable/ic_flecha"
+            android:textSize="18sp"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="45dp" android:id="@+id/Cerrar_Sesion"
+            />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+    <TextView
+            android:text="@string/validar_correo"
+            android:layout_width="match_parent"
+            android:drawableRight="@drawable/ic_flecha"
+            android:textSize="18sp"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="45dp" android:id="@+id/Validar_Usuario"
+    />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+    <TextView
+        android:text="@string/a_adir_producto"
+        android:layout_width="match_parent"
+        android:drawableRight="@drawable/ic_flecha"
+        android:textSize="18sp"
+        android:gravity="center|left"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="45dp" android:id="@+id/Add_Producto"
+/>
+
+    <TextView
+            android:text="@string/modificar_eliminar_producto"
+            android:layout_width="match_parent"
+            android:drawableRight="@drawable/ic_flecha"
+            android:textSize="18sp"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:background="?attr/selectableItemBackground"
+            android:visibility="invisible"
+            android:layout_height="45dp" android:id="@+id/Mod_Eli_Producto"
+    />
+
+</LinearLayout>
+
+</FrameLayout>

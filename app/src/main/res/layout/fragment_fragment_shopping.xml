@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragments.Fragment_shopping">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recycler_View"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            android:layout_gravity="top">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="75dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="wrap_content"
+            app:backgroundTint="@android:color/white"
+            android:layout_height="wrap_content"
+            android:clickable="true" android:id="@+id/Boton_Busqueda"/>
+</FrameLayout>
